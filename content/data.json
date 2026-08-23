@@ -1,0 +1,71 @@
+{
+  "profile": {
+    "name": "Aldrin Bangayan",
+    "role": "Creative Developer · Designer · Software Enthusiast",
+    "bio": "I'm Aldrin Bangayan, a Computer Science graduate and creative developer who enjoys turning ideas into functional and visually engaging digital experiences. My background combines software development, graphic design, web development, and multimedia, allowing me to approach projects from both the technical and creative side. I enjoy building things, experimenting with new technologies, and continuously turning ideas into projects.",
+    "photo": "images/profile.jpg",
+    "resume": "resume.pdf",
+    "contact": {
+      "email": "hello@aldrinbangayan.dev",
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "location": "Cordillera, Philippines"
+    }
+  },
+  "missions": [
+    {
+      "codename": "OP. FLOODWATCH",
+      "title": "Tuguegarao FloodWatch",
+      "description": "An IoT-based flood monitoring and visualization system designed to monitor water levels and provide real-time flood information through a desktop-based monitoring interface.",
+      "tech": ["Arduino Uno", "Water Level Sensor", "SIM900 GSM", "VB.NET", "GMap.NET", "MySQL"],
+      "status": "DEPLOYED",
+      "difficulty": "HIGH",
+      "image": "images/projects/floodwatch.jpg",
+      "link": ""
+    },
+    {
+      "codename": "OP. STOCKLINE",
+      "title": "Inventory Management System",
+      "description": "An inventory management system designed to simplify product tracking and inventory operations, with QR-code integration for faster identification and management.",
+      "tech": ["C#", "WinForms", "SQL / MySQL", "QR Code"],
+      "status": "DEPLOYED",
+      "difficulty": "MEDIUM",
+      "image": "images/projects/inventory.jpg",
+      "link": ""
+    },
+    {
+      "codename": "OP. WEEKLY BUILD",
+      "title": "Unity Game",
+      "description": "A small experimental Unity game created as part of an ongoing weekly project challenge focused on learning, experimentation, and game development.",
+      "tech": ["Unity", "C#"],
+      "status": "IN PROGRESS",
+      "difficulty": "MEDIUM",
+      "image": "images/projects/unity-game.jpg",
+      "link": ""
+    }
+  ],
+  "experience": [
+    {
+      "role": "Add your role here",
+      "org": "Company / Organization",
+      "period": "20XX — Present",
+      "type": "FULL-TIME",
+      "photo": "",
+      "summary": "One or two lines about what you did and what it involved. Use the admin panel or edit this file to add your real work history."
+    }
+  ],
+  "archive": [
+    {
+      "title": "Ink Blaze Design",
+      "category": "DESIGN",
+      "description": "A collection of graphic design and printing work including promotional materials, posters, social media graphics, apparel designs, and other visual projects.",
+      "tools": ["Photoshop", "Illustrator", "Figma"],
+      "image": "images/archive/inkblaze-01.jpg"
+    }
+  ],
+  "loadout": {
+    "languages": ["C#", "VB.NET", "JavaScript", "SQL"],
+    "frameworks": ["WinForms", "GMap.NET", "Unity"],
+    "tools": ["MySQL", "Arduino", "Git", "Photoshop", "Illustrator", "Figma"]
+  }
+}

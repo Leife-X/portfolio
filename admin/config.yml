@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Only people you invite via Netlify Identity (Site settings > Identity > Invite users)
+# can ever log into this panel. Everyone else just sees the public site.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Portfolio Content"
+    files:
+      - name: "profile"
+        label: "Profile"
+        file: "content/data.json"
+        fields:
+          - { label: "Profile", name: "profile", widget: "object", fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Role", name: "role", widget: "string" },
+              { label: "Bio", name: "bio", widget: "text" },
+              { label: "Photo", name: "photo", widget: "image" },
+              { label: "Resume (PDF)", name: "resume", widget: "file", required: false },
+              { label: "Contact", name: "contact", widget: "object", fields: [
+                  { label: "Email", name: "email", widget: "string" },
+                  { label: "GitHub URL", name: "github", widget: "string", required: false },
+                  { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false },
+                  { label: "Location", name: "location", widget: "string", required: false },
+                ]
+              },
+            ]
+          }
+          - { label: "Missions (Projects)", name: "missions", widget: "list", fields: [
+              { label: "Codename", name: "codename", widget: "string", required: false },
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Tech / Tools", name: "tech", widget: "list" },
+              { label: "Status", name: "status", widget: "select", options: ["DEPLOYED", "IN PROGRESS", "ARCHIVED"] },
+              { label: "Difficulty", name: "difficulty", widget: "select", options: ["LOW", "MEDIUM", "HIGH"], required: false },
+              { label: "Image", name: "image", widget: "image", required: false },
+              { label: "Link", name: "link", widget: "string", required: false },
+            ]
+          }
+          - { label: "Experience", name: "experience", widget: "list", fields: [
+              { label: "Role / Title", name: "role", widget: "string" },
+              { label: "Organization", name: "org", widget: "string" },
+              { label: "Period", name: "period", widget: "string", hint: "e.g. 2023 — Present" },
+              { label: "Type", name: "type", widget: "select", options: ["FULL-TIME", "PART-TIME", "FREELANCE", "INTERNSHIP", "CONTRACT"], required: false },
+              { label: "Location Photo (blends into the card as a background)", name: "photo", widget: "image", required: false },
+              { label: "Summary", name: "summary", widget: "text" },
+            ]
+          }
+          - { label: "Archive (Creative Work)", name: "archive", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Division", name: "category", widget: "select", options: ["DESIGN", "VIDEO", "EDITS", "PHOTOGRAPHY", "ILLUSTRATION", "OTHER"] },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Tools", name: "tools", widget: "list" },
+              { label: "Image (thumbnail)", name: "image", widget: "image" },
+              { label: "Video URL (optional — YouTube/Vimeo link, for Video/Edits entries)", name: "video_url", widget: "string", required: false },
+            ]
+          }
+          - { label: "Loadout (Skills)", name: "loadout", widget: "object", fields: [
+              { label: "Languages", name: "languages", widget: "list" },
+              { label: "Frameworks", name: "frameworks", widget: "list" },
+              { label: "Tools", name: "tools", widget: "list" },
+            ]
+          }

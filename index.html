@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aldrin Bangayan — Creative Developer</title>
+<meta name="description" content="Aldrin Bangayan — Creative Developer, Designer, Software Enthusiast." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SCANLINE / NOISE OVERLAY -->
+<div class="crt-overlay" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- BOOT SEQUENCE -->
+<div id="boot-screen">
+  <div class="boot-text">
+    <span class="boot-line">INITIALIZING AGENT PROFILE<span class="dots"></span></span>
+  </div>
+  <div class="boot-bar"><div class="boot-bar-fill"></div></div>
+</div>
+
+<!-- SIDE NAV : TACTICAL HUD -->
+<nav class="hud-nav" id="hud-nav">
+  <div class="hud-nav-brand">
+    <span class="hud-tag">AGENT_BANGAYAN //</span>
+  </div>
+  <ul>
+    <li><a href="#profile" data-section="profile"><span class="hud-index">01</span><span class="hud-label">PROFILE</span></a></li>
+    <li><a href="#missions" data-section="missions"><span class="hud-index">02</span><span class="hud-label">MISSIONS</span></a></li>
+    <li><a href="#loadout" data-section="loadout"><span class="hud-index">03</span><span class="hud-label">LOADOUT</span></a></li>
+    <li><a href="#experience" data-section="experience"><span class="hud-index">04</span><span class="hud-label">EXPERIENCE</span></a></li>
+    <li><a href="#archive" data-section="archive"><span class="hud-index">05</span><span class="hud-label">ARCHIVE</span></a></li>
+    <li><a href="#contact" data-section="contact"><span class="hud-index">06</span><span class="hud-label">CONTACT</span></a></li>
+  </ul>
+  <div class="hud-nav-status">
+    <span class="hud-tag">STATUS: <span class="hud-online">ONLINE</span></span>
+  </div>
+</nav>
+
+<div class="reticle" id="reticle" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><path d="M4 4 L4 12 M4 4 L12 4 M36 4 L36 12 M36 4 L28 4 M4 36 L4 28 M4 36 L12 36 M36 36 L36 28 M36 36 L28 36" /></svg>
+</div>
+
+<main>
+
+  <!-- ============ PROFILE / AGENT SELECT ============ -->
+  <section id="profile" class="section profile-section">
+    <div class="parallax-grid" data-speed="0.15"></div>
+    <div class="parallax-lines" data-speed="0.3"></div>
+
+    <div class="profile-inner">
+      <div class="agent-card">
+        <div class="agent-frame">
+          <div class="agent-corner tl"></div>
+          <div class="agent-corner tr"></div>
+          <div class="agent-corner bl"></div>
+          <div class="agent-corner br"></div>
+          <div class="agent-photo" id="agent-photo">
+            <img src="images/profile.jpg" alt="Aldrin Bangayan" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')">
+            <div class="agent-photo-placeholder">
+              <span>DROP PHOTO IN</span>
+              <code>/images/profile.jpg</code>
+            </div>
+          </div>
+          <div class="agent-label">
+            <span class="glitch" data-text="AGENT">AGENT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="agent-info">
+        <span class="eyebrow">// AGENT DOSSIER — 001</span>
+        <h1 class="agent-name glitch-text" id="agent-name">ALDRIN BANGAYAN</h1>
+        <p class="agent-role" id="agent-role">CREATIVE DEVELOPER · DESIGNER · SOFTWARE ENTHUSIAST</p>
+        <p class="agent-bio" id="agent-bio">
+          I'm Aldrin Bangayan, a Computer Science graduate and creative developer who enjoys turning ideas into functional and visually engaging digital experiences. My background combines software development, graphic design, web development, and multimedia, allowing me to approach projects from both the technical and creative side.
+        </p>
+        <div class="agent-actions">
+          <a href="#missions" class="btn btn-primary">VIEW MISSIONS</a>
+          <a href="resume.pdf" class="btn btn-outline" id="resume-link">DOWNLOAD RESUME</a>
+        </div>
+        <div class="tactical-rule profile-rule"></div>
+      </div>
+    </div>
+    <div class="scroll-cue">SCROLL <span>↓</span></div>
+  </section>
+
+  <!-- ============ MISSIONS / PROJECTS ============ -->
+  <section id="missions" class="section missions-section">
+    <div class="section-head">
+      <span class="hud-index-big">02</span>
+      <div>
+        <span class="eyebrow">// MISSION LOG</span>
+        <h2>MISSIONS</h2>
+      </div>
+    </div>
+    <div class="tactical-rule"></div>
+    <div class="missions-grid" id="missions-grid"><!-- injected --></div>
+  </section>
+
+  <!-- ============ LOADOUT / SKILLS ============ -->
+  <section id="loadout" class="section loadout-section">
+    <div class="parallax-grid" data-speed="0.1"></div>
+    <div class="section-head">
+      <span class="hud-index-big">03</span>
+      <div>
+        <span class="eyebrow">// EQUIPPED</span>
+        <h2>LOADOUT</h2>
+      </div>
+    </div>
+    <div class="tactical-rule"></div>
+    <div class="loadout-grid" id="loadout-grid"><!-- injected --></div>
+  </section>
+
+  <!-- ============ EXPERIENCE / SERVICE RECORD ============ -->
+  <section id="experience" class="section experience-section">
+    <div class="parallax-lines" data-speed="0.2"></div>
+    <div class="section-head">
+      <span class="hud-index-big">04</span>
+      <div>
+        <span class="eyebrow">// SERVICE RECORD</span>
+        <h2>EXPERIENCE</h2>
+      </div>
+    </div>
+    <div class="tactical-rule"></div>
+    <div class="timeline" id="experience-timeline"><!-- injected --></div>
+  </section>
+
+  <!-- ============ ARCHIVE / CREATIVE WORK ============ -->
+  <section id="archive" class="section archive-section">
+    <div class="section-head">
+      <span class="hud-index-big">05</span>
+      <div>
+        <span class="eyebrow">// CLASSIFIED FILES</span>
+        <h2>ARCHIVE</h2>
+      </div>
+    </div>
+    <div class="tactical-rule"></div>
+    <div class="archive-filters" id="archive-filters"><!-- injected --></div>
+    <div class="archive-grid" id="archive-grid"><!-- injected --></div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="parallax-lines" data-speed="0.25"></div>
+    <div class="section-head">
+      <span class="hud-index-big">06</span>
+      <div>
+        <span class="eyebrow">// OPEN CHANNEL</span>
+        <h2>CONTACT</h2>
+      </div>
+    </div>
+    <div class="tactical-rule"></div>
+    <div class="contact-inner">
+      <p class="contact-lede">Have a mission in mind? Transmit below.</p>
+      <div class="contact-links" id="contact-links"><!-- injected --></div>
+    </div>
+    <footer>
+      <span>© <span id="year"></span> ALDRIN BANGAYAN</span>
+      <span>BUILT WITH GSAP // HOSTED ON NETLIFY</span>
+    </footer>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
