@@ -6,10 +6,10 @@
     "photo": "images/profile.jpg",
     "resume": "resume.pdf",
     "contact": {
-      "email": "hello@aldrinbangayan.dev",
-      "github": "https://github.com/yourusername",
+      "email": "bangayanaldrin729@gmail.com",
+      "github": "https://github.com/Leife-X",
       "linkedin": "https://linkedin.com/in/yourusername",
-      "location": "Cordillera, Philippines"
+      "location": "Dubai, United Arab Emirates"
     }
   },
   "missions": [
@@ -67,6 +67,13 @@
       "type": "CONTRACT",
       "photo": "",
       "summary": "One or two lines about what you did and what it involved. Use the admin panel or edit this file to add your real work history."
+    },
+    {
+      "role": "Administrative Assistant",
+      "org": "Binghatti Holdings",
+      "period": "2026 - Present",
+      "type": "CONTRACT",
+      "summary": "Okay"
     }
   ],
   "archive": [
