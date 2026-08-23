@@ -27,8 +27,8 @@
       ],
       "status": "ARCHIVED",
       "difficulty": "HIGH",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXe5KMSw715hzFbMuCmiLJeX6Uvw_t-M20y6mtUX49IQpUT5qwWQMZmPE&s=10",
-      "link": "https://playvalorant.com/en-gb/"
+      "image": "",
+      "link": ""
     },
     {
       "codename": "OP. STOCKLINE",
@@ -80,14 +80,14 @@
   "archive": [
     {
       "title": "Ink Blaze Design",
-      "category": "DESIGN",
+      "category": "VIDEO",
       "description": "A collection of graphic design and printing work including promotional materials, posters, social media graphics, apparel designs, and other visual projects.",
       "tools": [
         "Photoshop",
         "Illustrator",
         "Figma"
       ],
-      "image": "images/archive/inkblaze-01.jpg"
+      "image": "https://www.renkeer.com/wp-content/uploads/2022/12/real-time-flood-monitoring-and-warning-system.jpg"
     }
   ],
   "loadout": {
